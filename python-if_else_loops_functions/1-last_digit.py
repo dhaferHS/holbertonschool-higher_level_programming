@@ -10,7 +10,7 @@ if number < 0:
         print(f"Last digit of {number * -1} is {digit} and is 0")
     else:
         print(f"Last digit of {number * -1} is {digit * -1} {rest}")
-        
+
 else:
     digit = number % 10
     if digit > 5:
