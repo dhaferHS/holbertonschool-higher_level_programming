@@ -4,4 +4,3 @@ for c in range(96, 122):
         print("{}".format(chr(c)), end="")
     else:
         print("{}".format(chr(c - 32)), end="")
- 
