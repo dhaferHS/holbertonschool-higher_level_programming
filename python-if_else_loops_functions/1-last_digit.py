@@ -5,7 +5,7 @@ number = random.randint(-10000, 10000)
 if number < 0:
     number = number * -1
     digit = number % 10
-    rest = and is less than 6 and not 0
+    rest = 'and is less than 6 and not 0'
     if digit == 0:
         print(f"Last digit of {number * -1} is {digit} and is 0")
     else:
