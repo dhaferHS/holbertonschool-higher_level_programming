@@ -6,5 +6,3 @@ def best_score(a_dictionary):
         Keymax = max(a_dictionary, key=lambda x: a_dictionary[x])
         if Keymax > 0:
             return (Keymax)
-        else:
-            return (None)
