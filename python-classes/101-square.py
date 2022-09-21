@@ -14,7 +14,7 @@ class Square:
 
     @property
     def size(self):
-        
+
         return (self.__size)
 
     @size.setter
@@ -62,6 +62,6 @@ class Square:
         for i in range(0, self.__size):
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for c in range(0, self.__size)]
-            if i is not  self.__size - 1:
+            if i is not self.__size - 1:
                 print("")
         return ("")
