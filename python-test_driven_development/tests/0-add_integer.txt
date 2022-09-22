@@ -10,7 +10,7 @@ string, a list, or a tuple.
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
-Add two integers
+
 >>> add_integer(1, 2)
 3
 >>> add_integer(100, -2)
@@ -26,7 +26,7 @@ Add two integers
 >>> add_integer(0)
 98
 
-Test that the return type is an int
+Test if  the return is an int
 >>> add_integer(3.2, 4.1)
 7
 
