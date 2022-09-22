@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-a function that prints 2 new lines after thi characters".?:" 
+a function that prints 2 new lines after thi characters".?:"
 """
 
 
