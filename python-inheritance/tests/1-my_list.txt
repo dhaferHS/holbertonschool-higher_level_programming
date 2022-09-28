@@ -67,6 +67,6 @@ List in order:
 
 Test append:
     >>> ml = MyList()
-    >>> ml.append(10)
+    >>> ml.append(2)
     >>> ml
-    [10]
+    [2]
