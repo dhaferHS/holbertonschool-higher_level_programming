@@ -2,7 +2,7 @@ a test file for a function that inherits from list
 
 Importing function from the module:
 
-    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> MyList = __import__('1-my_list').MyList
 
 Correct Class Type test:
     >>> ml = MyList()
