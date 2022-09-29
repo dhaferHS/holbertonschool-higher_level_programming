@@ -68,10 +68,15 @@ integer_validator method string value:
     Traceback (most recent call last):
     TypeError: Bar must be an integer
 
-integer_validator method list value:
-    >>> bg.integer_validator("a", [1])
+integer_validator method bool value:
+    >>> bg.integer_validator("age", True)
     Traceback (most recent call last):
-    TypeError: a must be an integer
+    TypeError: age must be an integer
+
+integer_validator method list value:
+    	>>> bg.integer_validator('age', True)
+	Traceback (most recent call last):
+	TypeError: age must be an integer
 
 integer_validator method None value:
     >>> bg.integer_validator("foo", None)
