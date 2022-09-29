@@ -4,7 +4,7 @@
 
 class BaseGeometry:
     """bass geometry area """
-    
+
     def area(self):
         """ implementation"""
         raise Exception("area() is not implemented")
