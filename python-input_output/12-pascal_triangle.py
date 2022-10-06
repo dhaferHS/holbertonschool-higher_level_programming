@@ -4,7 +4,9 @@
 
 def pascal_triangle(n):
     """ Pascal’s triangle of n"""
-
+    if n <= 0:
+        return []
+    
     triangle = [[1]]
     while len(triangle) != n:
         ntri = triangle[-1]
