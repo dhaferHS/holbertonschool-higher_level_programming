@@ -5,7 +5,7 @@ class Base:
     """base class"""
     
     
-    _nb_objects = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """id"""
@@ -13,5 +13,5 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            base.__nb_objects += 1
-            self.id = base.__nb_objects
+            Base.__nb_objects += 1
+            self.id = self.__nb_objects
