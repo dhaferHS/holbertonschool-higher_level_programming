@@ -11,7 +11,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-
     def to_json(self, attrs=None):
         """a dictionary for student data"""
         if attrs is None:
@@ -22,5 +21,5 @@ class Student:
                 newdict[i] = self.__dict__[i]
             except BaseException:
                 pass
-    
+
         return newdict
