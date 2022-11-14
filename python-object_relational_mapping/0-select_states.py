@@ -17,10 +17,10 @@ if __name__ == "__main__":
         database=argv[3],
 
     )
-    mycursor = db.cursor()
-    mycursor.execute("SELECT * FROM states ORDER BY id")
-    rows = mycursor.fetchall()
+    thecursor = db.cursor()
+    thecursor.execute("SELECT * FROM states ORDER BY id")
+    rows = thecursor.fetchall()
     for row in rows:
         print(row)
-    mycursor.close()
+    thecursor.close()
     db.close()
