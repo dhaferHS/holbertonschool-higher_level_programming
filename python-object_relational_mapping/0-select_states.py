@@ -13,15 +13,12 @@ if __name__ == "__main":
         user=argv[1],
         password=argv[2],
         database=argv[3],
+        
     )
-
     thecursor = db.cursor()
-    thecursor.execute("SELECT id, name FROM states ORDED BY id ASC")
-
+    thecursor.execute("SELECT * FROM states ORDER BY id")
     therows = thecursor.fetchall()
-
     for row in therows:
         print(row)
-
     thecursor.close()
     db.close()
