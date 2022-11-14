@@ -17,7 +17,7 @@ if __name__ == "__main":
 
     thecursor = db.cursor()
 
-    thecursor.execute("SELECT id, name FROM states ORDED BY id")
+    thecursor.execute("SELECT id, name FROM states ORDED BY id ASC")
 
     therows = thecursor.fetchall()
 
