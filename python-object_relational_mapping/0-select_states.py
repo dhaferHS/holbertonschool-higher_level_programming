@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-"""
-script that lists all states from the database hbtn_0e_0_usa
-"""
+"""lists all states from the database hbtn_0e_0_usa."""
 
 
 import MySQLdb
 from sys import argv
 
-if __name__ == "__main__":
+if __name__ == "__main":
 
     db = MySQLdb.connect(
         host="localhost",
@@ -15,13 +13,15 @@ if __name__ == "__main__":
         user=argv[1],
         password=argv[2],
         database=argv[3],
-
     )
-    cursor = db.cursor()
-    sql = "SELECT * FROM states ORDER BY id"
-    cursor.execute(sql)
-    results = cursor.fetchall()
-    for row in results:
+
+    thecursor = db.cursor()
+    thecursor.execute("SELECT id, name FROM states ORDED BY id ASC")
+
+    therows = thecursor.fetchall()
+
+    for row in therows:
         print(row)
-    cursor.close()
+
+    thecursor.close()
     db.close()
