@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
- script that takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
+ script that takes in an argument and displays all values in
+ the states table of hbtn_0e_0_usa where name matches 
+the argument.
 """
 
 
@@ -19,7 +21,7 @@ if __name__ == "__main__":
     )
     thecursor = db.cursor()
     thecursor.execute(
-        "SELECT id, name FROM states WHERE name LIKE BINARY '{}'ORDER BY id ASC"
+        "SELECT * FROM states WHERE name LIKE BINARY '{}'ORDER BY id ASC"
         .format(argv[4]))
     rows = thecursor.fetchall()
     for row in rows:
