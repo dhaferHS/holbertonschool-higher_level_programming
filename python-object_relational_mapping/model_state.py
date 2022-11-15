@@ -8,7 +8,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """This class links to the `states` table of database with id/name as attributes"""
+    """class links the `states` table of database with id/name as attributes"""
 
     __tablename__ = 'states'
 
