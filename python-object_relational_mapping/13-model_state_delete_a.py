@@ -18,9 +18,9 @@ if __name__ == "__main__":
         pool_pre_ping=True)
     Base.metadata.create_all(engine)
     session = Session(engine)
-
-    for state in session.query(State).order_by(State.id).all():
-        if 'a' in state.name:
+    statetodelete = session.query(State).order_by(State.id).all()
+    for stated in statetodelete:
+        if 'a' in stated.name:
             session.delete(state)
     session.commit()
     session.close()
