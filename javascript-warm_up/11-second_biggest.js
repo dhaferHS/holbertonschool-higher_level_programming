@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function nextBiggest (arr) {
-  let max = -Infinity; let result = 0;
+  let max = -1; let result = 0;
 
   for (const value of arr) {
     const nr = Number(value);
